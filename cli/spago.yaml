@@ -1,0 +1,11 @@
+package:
+  name: cli
+  dependencies:
+    - console
+    - effect
+    - prelude
+  test:
+    main: Test.Lazuli.CLI.JS
+    dependencies:
+      - spec
+      - spec-node

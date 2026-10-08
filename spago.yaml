@@ -1,0 +1,15 @@
+package:
+  name: lazuli
+  dependencies:
+    - console
+    - effect
+    - prelude
+  test:
+    main: Test.Main
+    dependencies:
+      - spec
+      - spec-node
+workspace:
+  packageSet:
+    registry: 81.3.0
+  extraPackages: {}

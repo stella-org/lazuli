@@ -1,0 +1,7 @@
+{
+  "name": "@stella-org/lazuli",
+  "description": "An official package manager for the Stella programming language.",
+  "author": "Katsujukou Kineya",
+  "version": "0.1.0",
+  "license": "MIT"
+}
