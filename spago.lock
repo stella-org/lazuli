@@ -2,7 +2,7 @@
   "workspace": {
     "packages": {
       "cli": {
-        "path": "lazuli",
+        "path": "cli",
         "core": {
           "dependencies": [
             "console",
@@ -20,14 +20,12 @@
       "lazuli": {
         "path": "./",
         "core": {
-          "dependencies": [
-            "console",
-            "effect",
-            "prelude"
-          ]
+          "dependencies": []
         },
         "test": {
           "dependencies": [
+            "effect",
+            "prelude",
             "spec",
             "spec-node"
           ]

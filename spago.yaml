@@ -1,12 +1,11 @@
 package:
   name: lazuli
-  dependencies:
-    - console
-    - effect
-    - prelude
+  dependencies: []
   test:
     main: Test.Main
     dependencies:
+      - effect
+      - prelude
       - spec
       - spec-node
 workspace:
