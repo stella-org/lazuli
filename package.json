@@ -3,5 +3,18 @@
   "description": "An official package manager for the Stella programming language.",
   "author": "Katsujukou Kineya",
   "version": "0.1.0",
-  "license": "MIT"
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "lazuli": "dist/index.js"
+  },
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "copy": "rm -rf ./dist && mkdir -p ./dist && cp ./cli/index.js ./dist",
+    "bundle": "rm -rf output output-es && spago build -p cli --pure && purs-backend-es bundle-module -p node -y -m Lazuli.CLI.JS -t ./dist/lib/bundle.js",
+    "prepublishOnly": "npm run copy && npm run bundle",
+    "version": "echo 'export const version = \"v'$npm_package_version'\";' > ./cli/src/Lazuli/CLI/Version.js && git add package.json ./cli/src/Lazuli/CLI/Version.js"
+  }
 }
