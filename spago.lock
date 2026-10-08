@@ -5,9 +5,15 @@
         "path": "cli",
         "core": {
           "dependencies": [
+            "aff-promise",
+            "ansi",
+            "argparse-basic",
             "console",
+            "dodo-printer",
             "effect",
-            "prelude"
+            "node-glob-basic",
+            "prelude",
+            "run"
           ]
         },
         "test": {
@@ -715,6 +721,21 @@
         "unsafe-coerce"
       ]
     },
+    "aff-promise": {
+      "type": "registry",
+      "version": "4.0.0",
+      "integrity": "sha256-Jgp3y+NWuuAmwz2V3LlWoX+AvxqfVglY77N5zTw8xnI=",
+      "dependencies": [
+        "aff",
+        "control",
+        "effect",
+        "either",
+        "exceptions",
+        "foreign",
+        "prelude",
+        "transformers"
+      ]
+    },
     "ansi": {
       "type": "registry",
       "version": "7.0.0",
@@ -764,6 +785,28 @@
         "prelude",
         "strings",
         "tailrec"
+      ]
+    },
+    "argparse-basic": {
+      "type": "registry",
+      "version": "2.0.0",
+      "integrity": "sha256-j0HDYapdh4HCvJgt1xBF5Xp2ZU9Pyd5n6spEgPZYkDk=",
+      "dependencies": [
+        "arrays",
+        "bifunctors",
+        "control",
+        "either",
+        "foldable-traversable",
+        "integers",
+        "lists",
+        "maybe",
+        "newtype",
+        "numbers",
+        "prelude",
+        "record",
+        "strings",
+        "tuples",
+        "unfoldable"
       ]
     },
     "arraybuffer-types": {
@@ -906,6 +949,25 @@
         "prelude",
         "tuples",
         "type-equality"
+      ]
+    },
+    "dodo-printer": {
+      "type": "registry",
+      "version": "2.2.3",
+      "integrity": "sha256-z6LZV9tXQPBZvHqzUYyCYGB7zHq6u7TOgV6Pr0wiobs=",
+      "dependencies": [
+        "ansi",
+        "either",
+        "foldable-traversable",
+        "integers",
+        "lists",
+        "maybe",
+        "newtype",
+        "partial",
+        "prelude",
+        "safe-coerce",
+        "strings",
+        "tuples"
       ]
     },
     "effect": {
@@ -1269,6 +1331,28 @@
         "strings"
       ]
     },
+    "node-glob-basic": {
+      "type": "registry",
+      "version": "2.0.0",
+      "integrity": "sha256-bGqHSBqz99RgUAuoFEllfm5dIlNBGV6x1QSXbQhsbLk=",
+      "dependencies": [
+        "aff",
+        "effect",
+        "either",
+        "foldable-traversable",
+        "lists",
+        "maybe",
+        "node-fs",
+        "node-path",
+        "node-process",
+        "ordered-collections",
+        "parallel",
+        "prelude",
+        "refs",
+        "strings",
+        "tuples"
+      ]
+    },
     "node-path": {
       "type": "registry",
       "version": "5.0.1",
@@ -1534,6 +1618,28 @@
         "prelude"
       ]
     },
+    "run": {
+      "type": "registry",
+      "version": "5.0.0",
+      "integrity": "sha256-zGCyG7IamjYWypKMXTP9PFis2ShnoZJKZiu3SbXMc+M=",
+      "dependencies": [
+        "aff",
+        "control",
+        "effect",
+        "either",
+        "free",
+        "maybe",
+        "newtype",
+        "partial",
+        "prelude",
+        "tailrec",
+        "tuples",
+        "type-equality",
+        "typelevel-prelude",
+        "unsafe-coerce",
+        "variant"
+      ]
+    },
     "safe-coerce": {
       "type": "registry",
       "version": "2.0.0",
@@ -1722,6 +1828,22 @@
       "version": "6.0.0",
       "integrity": "sha256-0L1QsaY20OILjfU5TV72d3U/tSjhmL9hJ32WMp857Lk=",
       "dependencies": []
+    },
+    "variant": {
+      "type": "registry",
+      "version": "8.0.0",
+      "integrity": "sha256-Ydrgl8liWEwYQOWW76PdZtg3vxKpoKgsnmFyTLgZkoU=",
+      "dependencies": [
+        "control",
+        "enums",
+        "foldable-traversable",
+        "lists",
+        "maybe",
+        "partial",
+        "prelude",
+        "type-equality",
+        "unsafe-coerce"
+      ]
     }
   }
 }

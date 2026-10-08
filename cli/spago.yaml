@@ -1,9 +1,15 @@
 package:
   name: cli
   dependencies:
+    - aff-promise
+    - ansi
+    - argparse-basic
     - console
+    - dodo-printer
     - effect
+    - node-glob-basic
     - prelude
+    - run
   test:
     main: Test.Lazuli.CLI.JS
     dependencies:
