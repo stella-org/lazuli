@@ -5,15 +5,26 @@
         "path": "cli",
         "core": {
           "dependencies": [
-            "aff-promise",
+            "aff",
             "ansi",
             "argparse-basic",
+            "arrays",
+            "bifunctors",
             "console",
             "dodo-printer",
             "effect",
+            "either",
+            "exceptions",
+            "maybe",
+            "node-buffer",
+            "node-fs",
             "node-glob-basic",
+            "node-path",
+            "node-process",
             "prelude",
-            "run"
+            "run",
+            "strings",
+            "typelevel-prelude"
           ]
         },
         "test": {
@@ -719,21 +730,6 @@
         "tailrec",
         "transformers",
         "unsafe-coerce"
-      ]
-    },
-    "aff-promise": {
-      "type": "registry",
-      "version": "4.0.0",
-      "integrity": "sha256-Jgp3y+NWuuAmwz2V3LlWoX+AvxqfVglY77N5zTw8xnI=",
-      "dependencies": [
-        "aff",
-        "control",
-        "effect",
-        "either",
-        "exceptions",
-        "foreign",
-        "prelude",
-        "transformers"
       ]
     },
     "ansi": {

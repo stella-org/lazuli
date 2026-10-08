@@ -1,15 +1,26 @@
 package:
   name: cli
   dependencies:
-    - aff-promise
+    - aff
     - ansi
     - argparse-basic
+    - arrays
+    - bifunctors
     - console
     - dodo-printer
     - effect
+    - either
+    - exceptions
+    - maybe
+    - node-buffer
+    - node-fs
     - node-glob-basic
+    - node-path
+    - node-process
     - prelude
     - run
+    - strings
+    - typelevel-prelude
   test:
     main: Test.Lazuli.CLI.JS
     dependencies:
