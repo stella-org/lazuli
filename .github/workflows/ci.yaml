@@ -66,6 +66,9 @@ jobs:
       - name: Format check
         run: git ls-files '*.purs' ':(exclude)docs/**' | xargs purs-tidy check
 
+      - name: Check for publish
+        run: npm publish --dry-run --json
+
   ci-gate:
     needs: [changes, ci]
     if: always()
