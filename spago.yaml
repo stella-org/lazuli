@@ -2,7 +2,7 @@ package:
   name: lazuli
   dependencies: []
   test:
-    main: Test.Main
+    main: Test.Lazuli
     dependencies:
       - effect
       - prelude
